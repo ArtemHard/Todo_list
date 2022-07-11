@@ -2,8 +2,12 @@ const initState = {
     todos: []
 }
 
+export const LOCAL_STORAGE_KEY = 'todos'
+
 const getInitState = () => {
-    return initState
+    const dataFromLS = JSON.parse(window.localStorage.getItem(LOCAL_STORAGE_KEY))
+    
+    return dataFromLS || initState
 }
 
 export default getInitState
