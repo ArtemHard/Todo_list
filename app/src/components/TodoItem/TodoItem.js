@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import { completedTodo, deleteTodo } from "../redux/actionCreators/todosAC";
-
+console.log("Render TodoItem");
 const TodoItem = ({
   id,
   title,
@@ -17,7 +17,7 @@ const TodoItem = ({
   const completedHandler = () => {
     dispatch(completedTodo(id));
   };
-  console.log("Render TodoItem");
+  
   return (
     <li className="list-group-item d-flex justify-content-between align-items-center">
       <span

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { createNewTodo } from "../redux/actionCreators/todosAC";
-
+console.log("Render Form");
 const Form = () => {
   const [title, setTitle] = useState("");
 
@@ -21,7 +21,7 @@ const Form = () => {
     }
   };
 
-  console.log("Render Form");
+ 
   return (
     <form
       onSubmit={submitHandler}

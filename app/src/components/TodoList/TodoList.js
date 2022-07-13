@@ -1,9 +1,10 @@
 import TodoItem from "../TodoItem/TodoItem";
 import {useSelector} from 'react-redux'
 
-const TodoList = () => {
-  console.log("Render TodoList");
+console.log("Render TodoList");
 
+const TodoList = () => {
+  
   const todos = useSelector(store => store.todos) // becouse except todos 'store' can includes 'author' and many different params
 
   const content = () => {

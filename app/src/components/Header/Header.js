@@ -1,8 +1,8 @@
 import Form from "../Form/Form";
 import React from "react";
-
+console.log("Render Header");
 const Header = ({ addNewTodo }) => {
-  console.log("Render Header");
+  
   return (
     <header>
       <Form addNewTodo={addNewTodo} />

@@ -2,8 +2,9 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { clearAllTodos } from "../redux/actionCreators/todosAC";
 
+console.log("Render Footer");
+
 const Footer = () => {
-  console.log("Render Footer");
 
   const dispatch = useDispatch()
 

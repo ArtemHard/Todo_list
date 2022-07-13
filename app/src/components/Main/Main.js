@@ -1,7 +1,7 @@
 import TodoList from "../TodoList/TodoList";
-
+console.log("Render Main");
 const Main = () => {
-  console.log("Render Main");
+  
   return (
     <div>
       <TodoList />
